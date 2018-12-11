@@ -10,7 +10,7 @@ Game.EntityMixin.PlayerMessager = {
         var nameEvt = evtData.target.getName();
         if(nameEvt == 'Hall of Mirrors')
           Game.Message.sendMessage('Do you want to walk into the '+ nameEvt +' for 10 Gold? Type \'y\' for yes, \'n\' for no');
-        else if(nameEvt == 'Forrest') {
+        else if(nameEvt == 'Forest') {
           if (Game.UIMode.gamePlay.attr._trippy) Game.Message.sendMessage('You have had enough Anthony.  Don\'t get addicted.');
           else Game.Message.sendMessage('Do you want to walk into the '+ nameEvt +'? Type \'y\' for yes, \'n\' for no');
         }
@@ -26,7 +26,7 @@ Game.EntityMixin.PlayerMessager = {
           Game.Message.sendMessage('Do you want to walk into your '+ nameEvt +'? Type \'y\' for yes, \'n\' for no');
         else if (nameEvt == 'talk bar' || nameEvt == 'talk shop')
           if (nameEvt == 'talk shop') Game.Message.sendMessage('Hi my name is Nola! Do you want to see what is for sale? Type \'y\' for yes, \'n\' for no')
-          else Game.Message.sendMessage('I\'m a resonable guy.  Do you want to see what is for sale? Type \'y\' for yes, \'n\' for no');
+          else Game.Message.sendMessage('I\'m a resonable guy with reasonable prices.  Do you want to see what is for sale? Type \'y\' for yes, \'n\' for no');
         else if (nameEvt == 'Town')
           Game.Message.sendMessage('Do you want to exit the shop? Type \'y\' for yes, \'n\' for no');
       },
@@ -156,8 +156,8 @@ Game.EntityMixin.PlayerActor = {
               Game.switchUIMode('gamePlayMirror');
             } else Game.UIMode.gamePlay.getAvatar().raiseSymbolActiveEvent('spendMoney',{amount:10});
           }
-          else if (this.getBumpEvt() == 'Forrest') {
-            Game.UIMode.gamePlay.setupMap('forrest');
+          else if (this.getBumpEvt() == 'Forest') {
+            Game.UIMode.gamePlay.setupMap('forest');
             Game.UIMode.gamePlay.removeAvatar();
           }
           else if (this.getBumpEvt() == 'Dungeon') {
@@ -234,7 +234,7 @@ Game.EntityMixin.PlayerActor = {
       },
       'walkForbidden' : function(evtData) {
         var nameEvt = evtData.target.getName();
-        if(nameEvt == 'Hall of Mirrors' || (nameEvt == 'Dungeon' && !Game.UIMode.gamePlay.attr._drunk) || (nameEvt == 'Forrest' && !Game.UIMode.gamePlay.attr._trippy) || nameEvt == 'Castle' || nameEvt == 'The Red Heeringa' || nameEvt == 'Shop And Stop' || nameEvt == 'Bedroom'){
+        if(nameEvt == 'Hall of Mirrors' || (nameEvt == 'Dungeon' && !Game.UIMode.gamePlay.attr._drunk) || (nameEvt == 'Forest' && !Game.UIMode.gamePlay.attr._trippy) || nameEvt == 'Castle' || nameEvt == 'The Red Heeringa' || nameEvt == 'Shop And Stop' || nameEvt == 'Bedroom'){
           Game.UIMode.gamePlay.setBumped(true);
           this.setBumpEvt(nameEvt);
         } else if (nameEvt == 'talk bar' || nameEvt == 'talk shop' || nameEvt == 'Town') {
