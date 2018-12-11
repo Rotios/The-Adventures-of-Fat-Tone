@@ -209,7 +209,7 @@ var Game = {
     story += "However, not long after he arrives he receives a frantic text! It says:\n\n";
     story += "\"Heeelp!!! Get Me Out Of Hereeeeeee! ~ Your Friend, Evan Williams.\"\n\n";
     story += "Reading the message, Tony begins to stress out! He isn't sure where Evan Williams is or how to get to him!\n\n";
-    story += "\"I know,\" thinks Tony, \"I bet he went into the forrest to get some more of that magical herb! Oh yeah that stuff was great!\"\n\n";
+    story += "\"I know,\" thinks Tony, \"I bet he went into the forest to get some more of that magical herb! Oh yeah that stuff was great!\"\n\n";
     story += "He stops to think a little more. \"Or he just got lost in that Dungeon again... What was it called... Saw-der, Saw-jer, Saw-errr..., SAWYER! Well better go check those places out!\"\n\n....";
     story += "\n\n\"Who knows, maybe I'll find that mystical new CS building we\'ve been promised.\"\n\n\n TIP: Kill mobs and buy food before leaving town to avoid starving.";
     return story;
@@ -223,12 +223,12 @@ var Game = {
   },
   getStoryDrunkNH: function() {
     var story = "Having defeated Evan Williams in 10 straight games of beer pong, Tony has begun to lose track of time and his memory isn't doing so good either. Still he doesn't want his night to end just yet, and he does remember one very important thing!\n\n";
-    story += "\"OHH BABY! I need some of that Magical Herb stuff now!\" Tony screams, \"Where did Evan find it again??... Oh yeah!! To the Forrest!\"\n\n";
+    story += "\"OHH BABY! I need some of that Magical Herb stuff now!\" Tony screams, \"Where did Evan find it again??... Oh yeah!! To the Forest!\"\n\n";
     story += "And so off he went.";
       return story;
   },
   getStoryHighND: function() {
-    var story = "Tony has searched everywhere in the Forrest, but Evan is nowhere to be found. Still, after finding Magical Herb, nothing can bring him down.\n\n";
+    var story = "Tony has searched everywhere in the Forest, but Evan is nowhere to be found. Still, after finding Magical Herb, nothing can bring him down.\n\n";
     story += "\"Well guess it's time to go look in that Dungeon,\" Tony whispers melodramatically. \"Now if only all those walls would stop chaning colors....\"\n\n\n \"I'M HUNGGRRYYY!!!! FOOODD!!!!!!!!!!";
       return story;
   },
@@ -244,13 +244,13 @@ var Game = {
     story += "And so Tony gets out of bed for one last adventure! \n\n (Walk into Jose to win!)";
       return story;
   },
-  getStoryForrestND: function() {
-    var story = "Tony begins his search for Evan in the Forrest. However, in his rush Tony has forgotten where the entrance is!\n\n"
+  getStoryForestND: function() {
+    var story = "Tony begins his search for Evan in the Forest. However, in his rush Tony has forgotten where the entrance is!\n\n"
     story += "\"It's ok,\" Tony whispers, \"All I got to do is find where the Magical Herb grows. That's where I bet Evan is, and I can totally find my way out from there.\"\n\n"
     story += "And so, with nowhere left to go, Tony continues further, hoping to find Evan and the Magical Herb before it is too late.";
     return story;
   },
-  getStoryForrestDK: function() {
+  getStoryForestDK: function() {
     var story = "OHH MAN! TIME TO FIND THAT HERB!";
     return story;
   },

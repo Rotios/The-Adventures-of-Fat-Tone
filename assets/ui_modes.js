@@ -251,12 +251,12 @@ Game.UIMode.gamePlay = {
     this.getMap().addEntity(this.getAvatar(),this.getMap().getRandomWalkablePosition());
     this.setCameraToAvatar();
 
-    if (map == 'forrest') {
+    if (map == 'forest') {
       if (this.attr._drunk) {
-        Game.UIMode.LAYER_textReading.setText(Game.getStoryForrestDK());
+        Game.UIMode.LAYER_textReading.setText(Game.getStoryForestDK());
         Game.addUIMode('LAYER_textReading');
       } else {
-        Game.UIMode.LAYER_textReading.setText(Game.getStoryForrestND());
+        Game.UIMode.LAYER_textReading.setText(Game.getStoryForestND());
         Game.addUIMode('LAYER_textReading');
       }
       this.getMap().addEntity(Game.EntityGenerator.create('Magical Herb'),this.getMap().getRandomReachablePosition());

@@ -10,7 +10,7 @@ Game.MapTileSets = {
         if (v === 0) {
           // Tiles to leave Town
           if (y >= 16 && y <= 18) {
-            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForrestTile;
+            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForestTile;
             else if (x == 1 && y == 17 ) mapTiles[x][y] = Game.Tile.toDungeonTile;
             else if (x != 1 && x != 58 ) mapTiles[x][y] = Game.Tile.roadTile;
           }
@@ -111,7 +111,7 @@ Game.MapTileSets = {
         if (v === 0) {
           // Tiles to leave Town
           if (y >= 16 && y <= 18) {
-            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForrestTile;
+            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForestTile;
             else if (x == 1 && y == 17 ) mapTiles[x][y] = Game.Tile.toDungeonTile;
             else if (x != 1 && x != 58 ) mapTiles[x][y] = Game.Tile.roadTile;
           }
@@ -212,7 +212,7 @@ Game.MapTileSets = {
         if (v === 0) {
           // Tiles to leave Town
           if (y >= 16 && y <= 18) {
-            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForrestTile;
+            if (x == 58 && y == 17 ) mapTiles[x][y] = Game.Tile.toForestTile;
             else if (x == 1 && y == 17 ) mapTiles[x][y] = Game.Tile.toDungeonTile;
             else if (x != 1 && x != 58 ) mapTiles[x][y] = Game.Tile.roadTile;
           }
@@ -303,7 +303,7 @@ Game.MapTileSets = {
       return mapTiles;
     }
   },
-  forrest: {
+  forest: {
     _width: 100,
     _height: 100,
     getMapTiles: function () {
